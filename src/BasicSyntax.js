@@ -3,7 +3,7 @@ export function romanToInteger(str) {
     let i = 0
     while(i<str.length){
       if (str[i] === 'I') {
-          if (str[i+1] === 'V') result += 4
+          if (str[i+1] === 'V') {result += 4; i+=2}
           else if (str[i+1] === 'X') {result +=9; i+=2}
           else if (str[i+1] === 'L') {result +=49; i+=2}
           else if (str[i+1] === 'C') {result +=99; i+=2}
